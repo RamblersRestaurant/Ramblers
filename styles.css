@@ -2,7 +2,7 @@
    RAMBLERS – Traditional Menu Stylesheet  (Mobile-First)
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cinzel:wght@400;600;700&family=IM+Fell+English:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cinzel:wght@400;600;700&display=swap');
 
 /* ── Reset ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -39,7 +39,7 @@ html {
 }
 
 body {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
   background-color: var(--parchment);
   color: var(--ink);
   font-size: 17px;
@@ -118,7 +118,7 @@ body {
 }
 
 .tagline {
-  font-family: 'IM Fell English', serif;
+  font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
   font-style: italic;
   font-size: clamp(0.82em, 3.5vw, 0.95em);
   color: var(--faded);
@@ -237,7 +237,7 @@ body {
 
 .menu-section > p,
 .menu-section > ul + p {
-  font-family: 'IM Fell English', serif;
+  font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
   font-style: italic;
   font-size: clamp(0.8em, 3.2vw, 0.9em);
   color: var(--faded);
@@ -279,7 +279,7 @@ body {
 }
 
 .menu-section li strong {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
   font-weight: 600;
   font-size: clamp(1em, 4vw, 1.12em);
   color: var(--section-head);
@@ -310,7 +310,7 @@ body {
 /* Description / ingredients — always full width below name */
 .menu-section li span:not(.price) {
   flex-basis: 100%;
-  font-family: 'IM Fell English', serif;
+  font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
   font-style: italic;
   font-size: clamp(0.78em, 3.2vw, 0.86em);
   color: var(--faded);
