@@ -1,498 +1,437 @@
-<!DOCTYPE html><html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Our Menu - Ramblers Bar &amp; Restaurant</title>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Playfair+Display:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./styles/styles.css?v=7">
-        <script src="./scripts/scripts.js"></script>
-</head> 
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu – Ramblers Bar &amp; Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cinzel:wght@400;600;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
 <body>
 
-    <div class="menu-container">
-        <h1 class="menu-title">Our Menu</h1>
-        <p class="tagline">“All Meals Are Freshly Cooked &amp; Prepared. Please Be Patient.”</p>
+<div class="menu-container">
 
-        <div class="tab-container" id="menuTabs" role="tablist" aria-label="Menu categories"></div>
+  <!-- Decorative band added via CSS ::before -->
 
-        <section class="menu-section" id="salads" role="tabpanel" tabindex="0" aria-labelledby="tab-salads">
-            <h2 class="food-category">Salads</h2>
-            <ul>
-                <li>
-                    <strong>Greek Salad</strong> <span class="price">€7</span>
-                    <span>(Tomatoes, Cucumber, Onions, Peppers, Olives, Feta)</span>
-                </li>
-                <li>
-                    <strong>Ramblers Salad</strong> <span class="price">€8</span>
-                    <span>(Tomatoes, Cucumber, Onions, Peppers, Lettuce, Beetroot, Olives, Feta, Croutons)</span>
-                </li>
-                <li>
-                    <strong>Chicken Salad</strong> <span class="price">€9.00</span>
-                    <span>(Tomatoes, Cucumber, Onions, Peppers, Lettuce, Chicken)</span>
-                </li>
-                <li>
-                    <strong>Avocado Salad</strong> <span class="price">€8.50</span>
-                    <span>(Tomatoes, Cucumber, Onions, Peppers, Lettuce, Olives, Avocado)</span>
-                </li>
-                <li>
-                    <strong>Tuna Salad</strong> <span class="price">€9.50</span>
-                    <span>(Tomatoes, Cucumbers, Onions, Peppers, Lettuce, Olives, Tuna)</span>
-                </li>
-                <li>
-                    <strong>Shrimp Salad</strong> <span class="price">€9.50</span>
-                    <span>(Tomatoes, Cucumbers, Onions, Peppers, Lettuce, Olives, Shrimps, Cocktail Dressing)</span>
-                </li>
-                <li>
-                    <strong>Cretan Salad</strong> <span class="price">€8</span>
-                    <span>(Tomatoes, Cucumbers, Onions, Peppers, Cubed Feta, Olives, Greek Rusks)</span>
-                </li>
-                <li>
-                    <strong>Caesar Salad</strong> <span class="price">€9.50</span>
-                    <span>(Lettuce, Chicken, Bacon, Parmesan Cheese, Croutons, Caesar Dressing)</span>
-                </li>
-            </ul>
-        </section>
+  <div class="menu-header">
+    <a class="back-link" href="index.html">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      Back
+    </a>
 
-        <section class="menu-section" id="appetisers" role="tabpanel" tabindex="0" aria-labelledby="tab-appetisers">
-            <h2 class="food-category">Appetisers</h2>
-            <ul>
-                <li>
-                    <strong>Fresh Bread and Garlic/Olive oil</strong> <span class="price">€2.50</span>
-                </li>
-                <li>
-                    <strong>Spring Rolls (sweet chili sauce)</strong> <span class="price">€2.00 each</span>
-                </li>
-                <li>
-                    <strong>French Fries</strong> <span class="price">€4.00</span>
-                </li>
-                <li>
-                    <strong>Onion Rings</strong> <span class="price">€5.50</span>
-                </li>
-                <li>
-                    <strong>Tzatziki and Bread</strong> <span class="price">€5.50</span>
-                </li>
-                <li>
-                    <strong>Feta Saganaki</strong> <span class="price">€6.50</span>
-                </li>
-                <li>
-                    <strong>Cheese Garlic Mushroom Bread</strong> <span class="price">€6.50</span>
-                </li>
-                <li>
-                    <strong>Gypsy Spits</strong> <span class="price">€8.00</span>
-                </li>
-                <li>
-                    <strong>Meat Balls in Greek Tomato Sauce (Beef)</strong> <span class="price">€8.00</span>
-                </li>
-                <li>
-                    <strong>Chicken Strips with Dipping Sauce</strong> <span class="price">€9.00</span>
-                </li>
-                <li>
-                    <strong>Wings (BBQ or Hot or Buffalo)</strong> <span class="price">€7.00</span>
-                </li>
-                <li>
-                    <strong>Calamari with Dipping Sauce</strong> <span class="price">€9.00</span>
-                </li>
-                <li>
-                    <strong>Cheese Pies with Honey</strong> <span class="price">€7.00</span>
-                </li>
-                <li>
-                    <strong>Cheese Balls with Sweet Chili Sauce (x8)</strong> <span class="price">€7.00</span>
-                </li>
-                <li>
-                    <strong>Breaded Shrimps (x8)</strong> <span class="price">€8.50</span>
-                    <span>(Served with sweet chili sauce)</span>
-                </li>
-            </ul>
-        </section>
+    <h1 class="menu-title">Ramblers</h1>
+    <span class="menu-subtitle">Bar &amp; Restaurant</span>
 
-        <section class="menu-section" id="main-dishes" role="tabpanel" tabindex="0" aria-labelledby="tab-main-dishes">
-            <h2 class="food-category">Main Dishes</h2>
-            <ul>
-                <li>
-                    <strong>Greek Pork Gyros</strong> <span class="price">€12.00</span>
-                    <span>Served with Fries, Pitta Bread, Tzatziki, Tomatoes &amp; Onions</span>
-                </li>
-                <li>
-                    <strong>Greek Chicken Gyros</strong> <span class="price">€12.00</span>
-                    <span>Served with Fries, Pitta Bread, Tzatziki, Tomatoes &amp; Onions</span>
-                </li>
-                <li>
-                    <strong>Beef Chilli</strong> <span class="price">€12.50</span>
-                </li>
-                <li>
-                    <strong>Steak Beef(200g), Egg &amp; Chips</strong> <span class="price">€17.50</span>
-                </li>
-                <li>
-                    <strong>Beef Kebab (x3)</strong> <span class="price">€17.50</span>
-                </li>
-                <li>
-                    <strong>Beef Fillet Steak (300g)</strong> <span class="price">€30.00</span>
-                </li>
-                <li>
-                    <strong>Beef Rump Steak (300g)</strong> <span class="price">€27.50</span>
-                </li>
-                <li>
-                    <strong>Beef Sirloin Steak (300g)</strong> <span class="price">€27.50</span>
-                </li>
-                <li>
-                    <strong>Beef T-Bone Steak (500g)</strong> <span class="price">€29.00</span>
-                </li>
-                <li>
-                    <strong>Beef Rib Eye Steak (300g)</strong> <span class="price">€28.00</span>
-                </li>
-                <li>
-                    <strong>Pork Kebab (x3)</strong> <span class="price">€12.50</span>
-                </li>
-                <li>
-                    <strong>Pork Chop (+500g)</strong> <span class="price">€12.50</span>
-                </li>
-                <li>
-                    <strong>Pork Spare Ribs (Full Rack)</strong> <span class="price">€17.50</span>
-                    <span>(BBQ or Plain)</span>
-                </li>
-                <li>
-                    <strong>Chicken Kebab (x3)</strong> <span class="price">€12.50</span>
-                </li>
-                <li>
-                    <strong>Grilled Chicken Fillet</strong> <span class="price">€12.50</span>
-                </li>
-                <li>
-                    <strong>Stuffed Chicken Fillet</strong> <span class="price">€14.50</span>
-                </li>
-                <li>
-                    <strong>Chicken Schnitzel</strong> <span class="price">€14.50</span>
-                </li>
-                <li>
-                    <strong>Lamb Chops</strong> <span class="price">€17.50</span>
-                    <span>(4 x Loin Chops)</span>
-                </li>
-            </ul>
-            <p>All main courses served with Chips or Mashed Potatoes or Rice and Salad or Mixed Vegetables</p>
+    <div class="header-rule">
+      <span class="header-rule-line"></span>
+      <span class="header-rule-ornament">✦</span>
+      <span class="header-rule-line"></span>
+    </div>
 
-            <h3>Special Dishes</h3>
-            <ul>
-                <li><strong>English Cottage Pie (Beef)</strong> <span class="price">€12.00</span></li>
-                <li><strong>Mexican Tacos (X3)</strong> <span class="price">€12.50</span></li>
-                <li><strong>Chinese Sweet &amp; Sour Chicken</strong> <span class="price">€13.00</span></li>
-                <li><strong>Indian Chicken Curry</strong> <span class="price">€13.00</span></li>
-                <li><strong>Australian Surf &amp; Turf</strong> <span class="price">€29.00</span>
-                    <span>(Beef Steak 300g &amp; 2x Prawns)</span>
-                </li>
-                <li><strong>American Cowboy Platter</strong> <span class="price">€35.00</span>
-                    <span>(Mixed Grill with Chips/Salad/Pitta Bread - serves 2 persons)</span>
-                </li>
-            </ul>
+    <p class="tagline">"All Meals Are Freshly Cooked &amp; Prepared. Please Be Patient."</p>
+  </div>
 
-            <h3>Seafood</h3>
-            <ul>
-                <li><strong>Calamari</strong> <span class="price">€13.50</span>
-                    <span>(With chips or rice)</span>
-                </li>
-                <li><strong>English Fish &amp; Chips</strong> <span class="price">€14.50</span></li>
-                <li><strong>Salmon Cutlet</strong> <span class="price">€16.00</span>
-                    <span>(with chips or rice)</span>
-                </li>
-                <li><strong>Prawns (x8)</strong> <span class="price">€18.50</span>
-                    <span>(with chips or rice)</span>
-                </li>
-            </ul>
+  <!-- Tab navigation (populated by JS) -->
+  <div class="tab-container" id="menuTabs" role="tablist" aria-label="Menu categories"></div>
 
-            <h3>Pasta Dishes</h3>
-            <ul>
-                <li><strong>Pasta Bolognese</strong> <span class="price">€13.50</span></li>
-                <li><strong>Pasta Carbonara</strong> <span class="price">€12.00</span></li>
-                <li><strong>Seafood Pasta</strong> <span class="price">€15.00</span></li>
-            </ul>
-            
-            <h3>Additions</h3>
-            <ul>
-                <li>
-                    <strong>Choice of Sauces</strong> <span class="price">€2.50</span>
-                    <span>Mushroom, Pepper, Garlic, Ramblers</span>
-                </li>
-            </ul>
-        </section>
-
-        <section class="menu-section" id="burgers" role="tabpanel" tabindex="0" aria-labelledby="tab-burgers">
-            <h2 class="food-category">Burgers</h2>
-            <ul>
-                <li><strong>Beef Burger (Plain)</strong> <span class="price">€9</span></li>
-                <li><strong>Cheese Burger</strong> <span class="price">€9.50</span></li>
-                <li><strong>Bacon Cheese Burger</strong> <span class="price">€10.00</span></li>
-                <li><strong>Chicken Burger</strong> <span class="price">€9.50</span></li>
-                <li><strong>Chicken Schnitzel Burger</strong> <span class="price">€10</span></li>
-                <li><strong>Steak Sandwich (100g Beef)</strong> <span class="price">€14.50</span></li>
-            </ul>
-            <p>All served with Fries</p>
-            <ul>
-                <li><strong>Extras (build your burger)</strong> <span class="price">€1.00</span>
-                    <span>Egg, Caramelised Onions, Pineapple, Jalapeños, Mushroom/Pepper/Garlic Sauces</span>
-                </li>
-            </ul>
-        </section>
-
-        <section class="menu-section" id="drinks" role="tabpanel" tabindex="0" aria-labelledby="tab-drinks">
-            <h2 class="food-category">Drinks</h2>
-            <h3>Soft Drinks</h3>
-            <ul>
-                <li><strong>Coca-Cola</strong> <span class="price">Bottle €2.00, Cans €2.50</span></li>
-                <li><strong>Coca-Cola Light</strong> <span class="price">Bottle €2.00, Cans €2.50</span></li>
-                <li><strong>Sprite</strong> <span class="price">Bottle €2.00, Cans €2.50</span></li>
-                <li><strong>Ginger Ale</strong> <span class="price">Cans €2.50</span></li>
-                <li><strong>Fanta Orange</strong> <span class="price">Cans €2.50</span></li>
-                <li><strong>Lemonade</strong> <span class="price">Cans €2.50</span></li>
-                <li><strong>Soda Water</strong> <span class="price">Bottle €2.00, Cans €2.50</span></li>
-                <li><strong>Tonic Water</strong> <span class="price">Bottle €2.00, Cans €2.50</span></li>
-                <li><strong>Tonic Water Zero</strong> <span class="price">Cans €2.50</span></li>
-                <li><strong>Gerani Gazoza</strong> <span class="price">Bottle €2.00</span></li>
-                <li><strong>Gerani Orange</strong> <span class="price">Bottle €2.00</span></li>
-                <li><strong>Gerani Lemonade</strong> <span class="price">Bottle €2.00</span></li>
-                <li><strong>Iced Tea (all Flavours)</strong> <span class="price">Cans €2.50</span></li>
-                <li><strong>Red Bull</strong> <span class="price">Cans €3.00</span></li>
-            </ul>
-
-            <h3>Beers</h3>
-            <ul>
-                <li><strong>Mythos 500ml</strong> <span class="price">€4.00</span></li>
-                <li><strong>Mythos Radler 330ml</strong> <span class="price">€3.50</span></li>
-                <li><strong>Mythos Zero 0% 330ml</strong> <span class="price">€3.50</span></li>
-                <li><strong>Amstel 500ml</strong> <span class="price">€4.00</span></li>
-                <li><strong>Fix 500ml</strong> <span class="price">€4.00</span></li>
-                <li><strong>Fix Dark 330ml</strong> <span class="price">€3.50</span></li>
-                <li><strong>Alfa 500ml</strong> <span class="price">€4.00</span></li>
-                <li><strong>Heineken 500ml</strong> <span class="price">€4.00</span></li>
-                <li><strong>Heineken Zero 0% 330ml</strong> <span class="price">€3.50</span></li>
-                <li><strong>Pils 500ml</strong> <span class="price">€4.00</span></li>
-                <li><strong>Eza Lager 500 ml</strong> <span class="price">€4.00</span></li>
-                <li><strong>Eza Pilsner 500ml</strong> <span class="price">€4.00</span></li>
-                <li><strong>Kaiser 500ml</strong> <span class="price">€4.00</span></li>
-                <li><strong>Blue Island 330ml</strong> <span class="price">€3.50</span></li>
-                <li><strong>Strongbow British Dry 330ml</strong> <span class="price">€3.50</span></li>
-                <li><strong>Strongbow Apple 330ml</strong> <span class="price">€3.50</span></li>
-                <li><strong>Strongbow Red Berries 330ml</strong> <span class="price">€3.50</span></li>
-                <li><strong>Odyssey White 330ml</strong> <span class="price">€6.00</span></li>
-                <li><strong>Odyssey Red 330ml</strong> <span class="price">€6.00</span></li>
-                <li><strong>Corona 355ml</strong> <span class="price">€5.00</span></li>
-                <li><strong>Stella Artois 330ml</strong> <span class="price">€4.00</span></li>
-                <li><strong>Duvel 330ml</strong> <span class="price">€6.50</span></li>
-                <li><strong>Chimay 330ml</strong> <span class="price">€6.50</span></li>
-            </ul>
-
-            <h3>Draught Beers</h3>
-            <ul>
-                <li><strong>Mythos</strong> <span class="price">330ml €4.00, 500ml €5.50</span></li>
-                <li><strong>Charma (Blonde)</strong> <span class="price">330ml €4.00, 500ml €5.50</span></li>
-                <li><strong>Charma (Dark)</strong> <span class="price">330ml €4.00, 500ml €5.50</span></li>
-                <li><strong>Guinness</strong> <span class="price">330ml €4.50, 500ml €7.50</span></li>
-            </ul>
-
-            <h3>Water, Juices &amp; House Wine</h3>
-            <ul>
-                <li><strong>Water 750ml Bottle</strong> <span class="price">€1.00</span></li>
-                <li><strong>Juices (All Flavours) per glass</strong> <span class="price">€2.50</span>
-                    <span>Orange, Banana, Strawberry, Lemon, Pineapple, Apple, Cranberry, Sour Cherry</span>
-                </li>
-                <li><strong>Coffee</strong> <span class="price">€2.50</span></li>
-                <li><strong>Tea</strong> <span class="price">€2.50</span></li>
-                <li><strong>Village Wine (White &amp; Red)</strong><br>
-                    <span class="price">Per Glass - €3.00</span><br>
-                    <span class="price">500ml - €6.00</span><br>
-                    <span class="price">1 Litre - €12.00</span>
-                </li>
-                <li><strong>Retsina Chania 500ml</strong> <span class="price">€5.00</span></li>
-                <li><strong>All Bottled Wine</strong> <span class="price">€13.50 per bottle</span></li>
-            </ul>
-
-            <h3>Cocktails</h3>
-            <ul>
-                <li><strong>Long Island Iced Tea</strong> <span class="price">€9.50</span></li>
-                <li><strong>Margarita</strong> <span class="price">€7.50</span></li>
-                <li><strong>Pina Colada</strong> <span class="price">€8.00</span></li>
-                <li><strong>Sex on the Beach</strong> <span class="price">€7.50</span></li>
-                <li><strong>Rum Runner</strong> <span class="price">€8.00</span></li>
-                <li><strong>Mojito</strong> <span class="price">€7.50</span></li>
-                <li><strong>Cosmopolitan</strong> <span class="price">€7.50</span></li>
-                <li><strong>Martini</strong> <span class="price">€7.00</span></li>
-                <li><strong>Manhattan</strong> <span class="price">€8.50</span></li>
-                <li><strong>Old Fashioned</strong> <span class="price">€8.50</span></li>
-                <li><strong>Bloody Mary</strong> <span class="price">€7.00</span>
-                    <span>(Vodka and spicy tomato juice)</span>
-                </li>
-                <li><strong>Irish Coffee</strong> <span class="price">€8.00</span>
-                    <span>(Whiskey with coffee, topped with fresh cream)</span>
-                </li>
-            </ul>
-
-            <h3>Irish Whiskey</h3>
-            <ul>
-                <li><strong>Jameson Whiskey</strong> <span class="price">€6.00</span></li>
-                <li><strong>Bushmill Whiskey</strong> <span class="price">€7.00</span></li>
-                <li><strong>Blackbush Whiskey</strong> <span class="price">€7.00</span></li>
-                <li><strong>Teeling Whiskey</strong> <span class="price">€7.00</span></li>
-                <li><strong>Red Breast</strong> <span class="price">€8.00</span></li>
-            </ul>
-
-            <h3>American Bourbon</h3>
-            <ul>
-                <li><strong>Jack Daniels</strong> <span class="price">€7.00</span></li>
-                <li><strong>Jack Daniels Honey</strong> <span class="price">€7.00</span></li>
-                <li><strong>Jim Beam</strong> <span class="price">€7.00</span></li>
-                <li><strong>Wild Turkey 81</strong> <span class="price">€8.00</span></li>
-                <li><strong>Buffalo Trace</strong> <span class="price">€8.00</span></li>
-            </ul>
-
-            <h3>Scottish Blended Whiskey</h3>
-            <ul>
-                <li><strong>Glenmorangie Whiskey</strong> <span class="price">€8.00</span></li>
-                <li><strong>Talisker Whiskey</strong> <span class="price">€8.00</span></li>
-                <li><strong>Chivas Whiskey</strong> <span class="price">€7.00</span></li>
-                <li><strong>Dimple Whiskey</strong> <span class="price">€7.00</span></li>
-                <li><strong>Jura Whiskey</strong> <span class="price">€8.00</span></li>
-                <li><strong>Glenfiddich Whiskey</strong> <span class="price">€8.00</span></li>
-                <li><strong>Cardhu Whiskey</strong> <span class="price">€8.00</span></li>
-                <li><strong>Johnnie Walker Red</strong> <span class="price">€6.00</span></li>
-                <li><strong>Johnnie Walker Black</strong> <span class="price">€7.00</span></li>
-                <li><strong>Bells Whiskey</strong> <span class="price">€6.00</span></li>
-                <li><strong>J &amp; B Whiskey</strong> <span class="price">€6.00</span></li>
-                <li><strong>Vat 69 Whiskey</strong> <span class="price">€6.00</span></li>
-                <li><strong>Cutty Sark Whiskey</strong> <span class="price">€6.00</span></li>
-                <li><strong>Black &amp; White Whiskey</strong> <span class="price">€6.00</span></li>
-                <li><strong>Teachers Whiskey</strong> <span class="price">€6.00</span></li>
-                <li><strong>Ballentines Whiskey</strong> <span class="price">€6.00</span></li>
-                <li><strong>Mackenzie Whiskey</strong> <span class="price">€6.00</span></li>
-            </ul>
-
-            <h3>Gins</h3>
-            <ul>
-                <li><strong>Gordon’s Gin</strong> <span class="price">€6.00</span></li>
-                <li><strong>Gordon’s Pink Gin</strong> <span class="price">€6.00</span></li>
-                <li><strong>Bombay Gin</strong> <span class="price">€7.00</span></li>
-                <li><strong>Hendrick’s Gin</strong> <span class="price">€7.00</span></li>
-                <li><strong>Bulldog Gin</strong> <span class="price">€7.00</span></li>
-                <li><strong>Tanqueray Gin</strong> <span class="price">€7.00</span></li>
-                <li><strong>Beefeaters Gin</strong> <span class="price">€7.00</span></li>
-            </ul>
-
-            <h3>Vodka</h3>
-            <ul>
-                <li><strong>Absolut Vodka</strong> <span class="price">€6.00</span></li>
-                <li><strong>Serkova Vodka</strong> <span class="price">€6.00</span></li>
-                <li><strong>Ursus Vodka</strong> <span class="price">€6.00</span></li>
-            </ul>
-
-            <h3>Rum</h3>
-            <ul>
-                <li><strong>Bacardi</strong> <span class="price">€6.00</span></li>
-                <li><strong>Bacardi Spiced</strong> <span class="price">€6.00</span></li>
-                <li><strong>Bacardi Dark</strong> <span class="price">€6.00</span></li>
-                <li><strong>Captain Morgan Spiced</strong> <span class="price">€6.00</span></li>
-                <li><strong>Captain Morgan Dark</strong> <span class="price">€6.00</span></li>
-                <li><strong>Captain Morgan Reserve</strong> <span class="price">€6.00</span></li>
-                <li><strong>Havana Club 3</strong> <span class="price">€6.00</span></li>
-                <li><strong>Havana Club Dark</strong> <span class="price">€6.00</span></li>
-                <li><strong>Malibu</strong> <span class="price">€6.00</span></li>
-            </ul>
-
-            <h3>Tequila</h3>
-            <ul>
-                <li><strong>Tequila Silver (shot)</strong> <span class="price">€3.00</span></li>
-                <li><strong>Tequila Yellow (shot)</strong> <span class="price">€2.50</span></li>
-            </ul>
-
-            <h3>Others (Drinks related)</h3>
-            <ul>
-                <li><strong>Crown Royal (all)</strong> <span class="price">€8.00</span></li>
-                <li><strong>Metaxa 3</strong> <span class="price">€6.00</span></li>
-                <li><strong>Metaxa 5</strong> <span class="price">€7.00</span></li>
-                <li><strong>Martini</strong> <span class="price">€6.00</span></li>
-                <li><strong>Japanese Whiskey (any)</strong> <span class="price">€7.00</span></li>
-                <li><strong>Ouzo</strong> <span class="price">€4.00</span></li>
-                <li><strong>Hennessy</strong> <span class="price">€7.00</span></li>
-                <li><strong>Four Roses Bourbon</strong> <span class="price">€6.00</span></li>
-                <li><strong>Baileys</strong> <span class="price">€6.00</span></li>
-                <li><strong>Disaronno</strong> <span class="price">€6.00</span></li>
-                <li><strong>Tia Maria</strong> <span class="price">€6.00</span></li>
-                <li><strong>Kahlua</strong> <span class="price">€6.00</span></li>
-                <li><strong>Southern Comfort</strong> <span class="price">€6.00</span></li>
-                <li><strong>Drambuie</strong> <span class="price">€6.00</span></li>
-                <li><strong>Cointreau</strong> <span class="price">€6.00</span></li>
-                <li><strong>Grand Marnier</strong> <span class="price">€6.00</span></li>
-                <li><strong>Campari</strong> <span class="price">€6.00</span></li>
-                <li><strong>Pimm’s</strong> <span class="price">€6.00</span></li>
-                <li><strong>Sours</strong> <span class="price">€6.00</span></li>
-                <li><strong>Fireball (shot)</strong> <span class="price">€2.50</span></li>
-            </ul>
-        </section>
-        <section class="menu-section" id="breakfast" role="tabpanel" tabindex="0" aria-labelledby="tab-breakfast">
-    <h2 class="food-category">Breakfast Menu (Served from 8am to 4pm)</h2>
+  <!-- ══ SALADS ══ -->
+  <section class="menu-section" id="salads" role="tabpanel" tabindex="0" aria-labelledby="tab-salads">
+    <h2 class="food-category">Salads</h2>
     <ul>
-        <li><strong>Small Breakfast (1x Sausage, 2x Bacon, 1x Egg, 1x Toast, 1x Fried Tomato, Baked Beans & Cup of Tea or Coffee)</strong><span class="price">€8.00</span></li>
-        <li><strong>Medium Breakfast (2x Bacon, 2x Sausage, 1x Egg, 2x Hash Brown, 1x Toast, 1x Fried Tomato, Baked Beans & Cup of Tea or Coffee)</strong><span class="price">€9.50</span></li>
-        <li><strong>Full English Breakfast (3x Bacon, 3x Sausages, 2x Eggs, 2x Toast, 2x Hash Browns, 2x Fried Tomato, Baked Beans & Cup of Tea or Coffee)</strong><span class="price">€12.00</span></li>
-        <li><strong>Vegetarian Breakfast (2x Eggs, 2x Toast, 2x Hash Brown, 2x Fried Tomato, Baked Beans & a Cup of Tea or Coffee)</strong><span class="price">€8.00</span></li>
-        <li><strong>Beans on Toast</strong><span class="price">€4.50</span></li>
-        <li><strong>2x Toast with Butter & Jam</strong><span class="price">€4.00</span></li>
+      <li><strong>Greek Salad</strong> <span class="price">€7</span>
+          <span>Tomatoes, Cucumber, Onions, Peppers, Olives, Feta</span></li>
+      <li><strong>Ramblers Salad</strong> <span class="price">€8</span>
+          <span>Tomatoes, Cucumber, Onions, Peppers, Lettuce, Beetroot, Olives, Feta, Croutons</span></li>
+      <li><strong>Chicken Salad</strong> <span class="price">€9.00</span>
+          <span>Tomatoes, Cucumber, Onions, Peppers, Lettuce, Chicken</span></li>
+      <li><strong>Avocado Salad</strong> <span class="price">€8.50</span>
+          <span>Tomatoes, Cucumber, Onions, Peppers, Lettuce, Olives, Avocado</span></li>
+      <li><strong>Tuna Salad</strong> <span class="price">€9.50</span>
+          <span>Tomatoes, Cucumbers, Onions, Peppers, Lettuce, Olives, Tuna</span></li>
+      <li><strong>Shrimp Salad</strong> <span class="price">€9.50</span>
+          <span>Tomatoes, Cucumbers, Onions, Peppers, Lettuce, Olives, Shrimps, Cocktail Dressing</span></li>
+      <li><strong>Cretan Salad</strong> <span class="price">€8</span>
+          <span>Tomatoes, Cucumbers, Onions, Peppers, Cubed Feta, Olives, Greek Rusks</span></li>
+      <li><strong>Caesar Salad</strong> <span class="price">€9.50</span>
+          <span>Lettuce, Chicken, Bacon, Parmesan Cheese, Croutons, Caesar Dressing</span></li>
+    </ul>
+  </section>
+
+  <!-- ══ APPETISERS ══ -->
+  <section class="menu-section" id="appetisers" role="tabpanel" tabindex="0" aria-labelledby="tab-appetisers">
+    <h2 class="food-category">Appetisers</h2>
+    <ul>
+      <li><strong>Fresh Bread and Garlic/Olive oil</strong> <span class="price">€2.50</span></li>
+      <li><strong>Spring Rolls (sweet chili sauce)</strong> <span class="price">€2.00 each</span></li>
+      <li><strong>French Fries</strong> <span class="price">€4.00</span></li>
+      <li><strong>Onion Rings</strong> <span class="price">€5.50</span></li>
+      <li><strong>Tzatziki and Bread</strong> <span class="price">€5.50</span></li>
+      <li><strong>Feta Saganaki</strong> <span class="price">€6.50</span></li>
+      <li><strong>Cheese Garlic Mushroom Bread</strong> <span class="price">€6.50</span></li>
+      <li><strong>Gypsy Spits</strong> <span class="price">€8.00</span></li>
+      <li><strong>Meat Balls in Greek Tomato Sauce (Beef)</strong> <span class="price">€8.00</span></li>
+      <li><strong>Chicken Strips with Dipping Sauce</strong> <span class="price">€9.00</span></li>
+      <li><strong>Wings (BBQ or Hot or Buffalo)</strong> <span class="price">€7.00</span></li>
+      <li><strong>Calamari with Dipping Sauce</strong> <span class="price">€9.00</span></li>
+      <li><strong>Cheese Pies with Honey</strong> <span class="price">€7.00</span></li>
+      <li><strong>Cheese Balls with Sweet Chili Sauce (x8)</strong> <span class="price">€7.00</span></li>
+      <li><strong>Breaded Shrimps (x8)</strong> <span class="price">€8.50</span>
+          <span>Served with sweet chili sauce</span></li>
+    </ul>
+  </section>
+
+  <!-- ══ MAIN DISHES ══ -->
+  <section class="menu-section" id="main-dishes" role="tabpanel" tabindex="0" aria-labelledby="tab-main-dishes">
+    <h2 class="food-category">Main Dishes</h2>
+    <ul>
+      <li><strong>Greek Pork Gyros</strong> <span class="price">€12.00</span>
+          <span>Served with Fries, Pitta Bread, Tzatziki, Tomatoes &amp; Onions</span></li>
+      <li><strong>Greek Chicken Gyros</strong> <span class="price">€12.00</span>
+          <span>Served with Fries, Pitta Bread, Tzatziki, Tomatoes &amp; Onions</span></li>
+      <li><strong>Beef Chilli</strong> <span class="price">€12.50</span></li>
+      <li><strong>Steak Beef (200g), Egg &amp; Chips</strong> <span class="price">€17.50</span></li>
+      <li><strong>Beef Kebab (x3)</strong> <span class="price">€17.50</span></li>
+      <li><strong>Beef Fillet Steak (300g)</strong> <span class="price">€30.00</span></li>
+      <li><strong>Beef Rump Steak (300g)</strong> <span class="price">€27.50</span></li>
+      <li><strong>Beef Sirloin Steak (300g)</strong> <span class="price">€27.50</span></li>
+      <li><strong>Beef T-Bone Steak (500g)</strong> <span class="price">€29.00</span></li>
+      <li><strong>Beef Rib Eye Steak (300g)</strong> <span class="price">€28.00</span></li>
+      <li><strong>Pork Kebab (x3)</strong> <span class="price">€12.50</span></li>
+      <li><strong>Pork Chop (+500g)</strong> <span class="price">€12.50</span></li>
+      <li><strong>Pork Spare Ribs (Full Rack)</strong> <span class="price">€17.50</span>
+          <span>BBQ or Plain</span></li>
+      <li><strong>Chicken Kebab (x3)</strong> <span class="price">€12.50</span></li>
+      <li><strong>Grilled Chicken Fillet</strong> <span class="price">€12.50</span></li>
+      <li><strong>Stuffed Chicken Fillet</strong> <span class="price">€14.50</span></li>
+      <li><strong>Chicken Schnitzel</strong> <span class="price">€14.50</span></li>
+      <li><strong>Lamb Chops</strong> <span class="price">€17.50</span>
+          <span>4 x Loin Chops</span></li>
+    </ul>
+    <p>All main courses served with Chips or Mashed Potatoes or Rice and Salad or Mixed Vegetables</p>
+
+    <h3>Special Dishes</h3>
+    <ul>
+      <li><strong>English Cottage Pie (Beef)</strong> <span class="price">€12.00</span></li>
+      <li><strong>Mexican Tacos (X3)</strong> <span class="price">€12.50</span></li>
+      <li><strong>Chinese Sweet &amp; Sour Chicken</strong> <span class="price">€13.00</span></li>
+      <li><strong>Indian Chicken Curry</strong> <span class="price">€13.00</span></li>
+      <li><strong>Australian Surf &amp; Turf</strong> <span class="price">€29.00</span>
+          <span>Beef Steak 300g &amp; 2x Prawns</span></li>
+      <li><strong>American Cowboy Platter</strong> <span class="price">€35.00</span>
+          <span>Mixed Grill with Chips/Salad/Pitta Bread – serves 2 persons</span></li>
+    </ul>
+
+    <h3>Seafood</h3>
+    <ul>
+      <li><strong>Calamari</strong> <span class="price">€13.50</span>
+          <span>With chips or rice</span></li>
+      <li><strong>English Fish &amp; Chips</strong> <span class="price">€14.50</span></li>
+      <li><strong>Salmon Cutlet</strong> <span class="price">€16.00</span>
+          <span>With chips or rice</span></li>
+      <li><strong>Prawns (x8)</strong> <span class="price">€18.50</span>
+          <span>With chips or rice</span></li>
+    </ul>
+
+    <h3>Pasta Dishes</h3>
+    <ul>
+      <li><strong>Pasta Bolognese</strong> <span class="price">€13.50</span></li>
+      <li><strong>Pasta Carbonara</strong> <span class="price">€12.00</span></li>
+      <li><strong>Seafood Pasta</strong> <span class="price">€15.00</span></li>
+    </ul>
+
+    <h3>Additions</h3>
+    <ul>
+      <li><strong>Choice of Sauces</strong> <span class="price">€2.50</span>
+          <span>Mushroom, Pepper, Garlic, Ramblers</span></li>
+    </ul>
+  </section>
+
+  <!-- ══ BURGERS ══ -->
+  <section class="menu-section" id="burgers" role="tabpanel" tabindex="0" aria-labelledby="tab-burgers">
+    <h2 class="food-category">Burgers</h2>
+    <ul>
+      <li><strong>Beef Burger (Plain)</strong> <span class="price">€9</span></li>
+      <li><strong>Cheese Burger</strong> <span class="price">€9.50</span></li>
+      <li><strong>Bacon Cheese Burger</strong> <span class="price">€10.00</span></li>
+      <li><strong>Chicken Burger</strong> <span class="price">€9.50</span></li>
+      <li><strong>Chicken Schnitzel Burger</strong> <span class="price">€10</span></li>
+      <li><strong>Steak Sandwich (100g Beef)</strong> <span class="price">€14.50</span></li>
+    </ul>
+    <p>All served with Fries</p>
+    <h3>Build Your Burger</h3>
+    <ul>
+      <li><strong>Extras</strong> <span class="price">€1.00 each</span>
+          <span>Egg, Caramelised Onions, Pineapple, Jalapeños, Mushroom / Pepper / Garlic Sauces</span></li>
+    </ul>
+  </section>
+
+  <!-- ══ DRINKS ══ -->
+  <section class="menu-section" id="drinks" role="tabpanel" tabindex="0" aria-labelledby="tab-drinks">
+    <h2 class="food-category">Drinks</h2>
+
+    <h3>Soft Drinks</h3>
+    <ul>
+      <li><strong>Coca-Cola</strong>           <span class="price">Bottle €2.00 · Cans €2.50</span></li>
+      <li><strong>Coca-Cola Light</strong>      <span class="price">Bottle €2.00 · Cans €2.50</span></li>
+      <li><strong>Sprite</strong>               <span class="price">Bottle €2.00 · Cans €2.50</span></li>
+      <li><strong>Ginger Ale</strong>           <span class="price">Cans €2.50</span></li>
+      <li><strong>Fanta Orange</strong>         <span class="price">Cans €2.50</span></li>
+      <li><strong>Lemonade</strong>             <span class="price">Cans €2.50</span></li>
+      <li><strong>Soda Water</strong>           <span class="price">Bottle €2.00 · Cans €2.50</span></li>
+      <li><strong>Tonic Water</strong>          <span class="price">Bottle €2.00 · Cans €2.50</span></li>
+      <li><strong>Tonic Water Zero</strong>     <span class="price">Cans €2.50</span></li>
+      <li><strong>Gerani Gazoza</strong>        <span class="price">Bottle €2.00</span></li>
+      <li><strong>Gerani Orange</strong>        <span class="price">Bottle €2.00</span></li>
+      <li><strong>Gerani Lemonade</strong>      <span class="price">Bottle €2.00</span></li>
+      <li><strong>Iced Tea (all Flavours)</strong> <span class="price">Cans €2.50</span></li>
+      <li><strong>Red Bull</strong>             <span class="price">Cans €3.00</span></li>
+    </ul>
+
+    <h3>Water, Juices &amp; House Wine</h3>
+    <ul>
+      <li><strong>Water 750ml Bottle</strong> <span class="price">€1.00</span></li>
+      <li><strong>Juices (All Flavours) per glass</strong> <span class="price">€2.50</span>
+          <span>Orange, Banana, Strawberry, Lemon, Pineapple, Apple, Cranberry, Sour Cherry</span></li>
+      <li><strong>Coffee</strong> <span class="price">€2.50</span></li>
+      <li><strong>Tea</strong> <span class="price">€2.50</span></li>
+      <li><strong>Village Wine (White &amp; Red)</strong> <span class="price">Glass €3.00 · 500ml €6.00 · 1L €12.00</span></li>
+      <li><strong>Retsina Chania 500ml</strong> <span class="price">€5.00</span></li>
+      <li><strong>All Bottled Wine</strong> <span class="price">€13.50 per bottle</span></li>
+    </ul>
+
+    <h3>Beers</h3>
+    <ul>
+      <li><strong>Mythos 500ml</strong>             <span class="price">€4.00</span></li>
+      <li><strong>Mythos Radler 330ml</strong>       <span class="price">€3.50</span></li>
+      <li><strong>Mythos Zero 0% 330ml</strong>      <span class="price">€3.50</span></li>
+      <li><strong>Amstel 500ml</strong>              <span class="price">€4.00</span></li>
+      <li><strong>Fix 500ml</strong>                 <span class="price">€4.00</span></li>
+      <li><strong>Fix Dark 330ml</strong>            <span class="price">€3.50</span></li>
+      <li><strong>Alfa 500ml</strong>                <span class="price">€4.00</span></li>
+      <li><strong>Heineken 500ml</strong>            <span class="price">€4.00</span></li>
+      <li><strong>Heineken Zero 0% 330ml</strong>    <span class="price">€3.50</span></li>
+      <li><strong>Pils 500ml</strong>                <span class="price">€4.00</span></li>
+      <li><strong>Eza Lager 500ml</strong>           <span class="price">€4.00</span></li>
+      <li><strong>Eza Pilsner 500ml</strong>         <span class="price">€4.00</span></li>
+      <li><strong>Kaiser 500ml</strong>              <span class="price">€4.00</span></li>
+      <li><strong>Blue Island 330ml</strong>         <span class="price">€3.50</span></li>
+      <li><strong>Strongbow British Dry 330ml</strong> <span class="price">€3.50</span></li>
+      <li><strong>Strongbow Apple 330ml</strong>     <span class="price">€3.50</span></li>
+      <li><strong>Strongbow Red Berries 330ml</strong> <span class="price">€3.50</span></li>
+      <li><strong>Odyssey White 330ml</strong>       <span class="price">€6.00</span></li>
+      <li><strong>Odyssey Red 330ml</strong>         <span class="price">€6.00</span></li>
+      <li><strong>Corona 355ml</strong>              <span class="price">€5.00</span></li>
+      <li><strong>Stella Artois 330ml</strong>       <span class="price">€4.00</span></li>
+      <li><strong>Duvel 330ml</strong>               <span class="price">€6.50</span></li>
+      <li><strong>Chimay 330ml</strong>              <span class="price">€6.50</span></li>
+    </ul>
+
+    <h3>Draught Beers</h3>
+    <ul>
+      <li><strong>Mythos</strong>          <span class="price">330ml €4.00 · 500ml €5.50</span></li>
+      <li><strong>Charma (Blonde)</strong> <span class="price">330ml €4.00 · 500ml €5.50</span></li>
+      <li><strong>Charma (Dark)</strong>   <span class="price">330ml €4.00 · 500ml €5.50</span></li>
+      <li><strong>Guinness</strong>        <span class="price">330ml €4.50 · 500ml €7.50</span></li>
+    </ul>
+
+    <h3>Cocktails</h3>
+    <ul>
+      <li><strong>Long Island Iced Tea</strong> <span class="price">€9.50</span></li>
+      <li><strong>Margarita</strong>            <span class="price">€7.50</span></li>
+      <li><strong>Pina Colada</strong>          <span class="price">€8.00</span></li>
+      <li><strong>Sex on the Beach</strong>     <span class="price">€7.50</span></li>
+      <li><strong>Rum Runner</strong>           <span class="price">€8.00</span></li>
+      <li><strong>Mojito</strong>               <span class="price">€7.50</span></li>
+      <li><strong>Cosmopolitan</strong>         <span class="price">€7.50</span></li>
+      <li><strong>Martini</strong>              <span class="price">€7.00</span></li>
+      <li><strong>Manhattan</strong>            <span class="price">€8.50</span></li>
+      <li><strong>Old Fashioned</strong>        <span class="price">€8.50</span></li>
+      <li><strong>Bloody Mary</strong>          <span class="price">€7.00</span>
+          <span>Vodka and spicy tomato juice</span></li>
+      <li><strong>Irish Coffee</strong>         <span class="price">€8.00</span>
+          <span>Whiskey with coffee, topped with fresh cream</span></li>
+    </ul>
+
+    <h3>Irish Whiskey</h3>
+    <ul>
+      <li><strong>Jameson Whiskey</strong>   <span class="price">€6.00</span></li>
+      <li><strong>Bushmill Whiskey</strong>  <span class="price">€7.00</span></li>
+      <li><strong>Blackbush Whiskey</strong> <span class="price">€7.00</span></li>
+      <li><strong>Teeling Whiskey</strong>   <span class="price">€7.00</span></li>
+      <li><strong>Red Breast</strong>        <span class="price">€8.00</span></li>
+    </ul>
+
+    <h3>American Bourbon</h3>
+    <ul>
+      <li><strong>Jack Daniels</strong>       <span class="price">€7.00</span></li>
+      <li><strong>Jack Daniels Honey</strong> <span class="price">€7.00</span></li>
+      <li><strong>Jim Beam</strong>           <span class="price">€7.00</span></li>
+      <li><strong>Wild Turkey 81</strong>     <span class="price">€8.00</span></li>
+      <li><strong>Buffalo Trace</strong>      <span class="price">€8.00</span></li>
+    </ul>
+
+    <h3>Scottish Blended Whiskey</h3>
+    <ul>
+      <li><strong>Glenmorangie Whiskey</strong>  <span class="price">€8.00</span></li>
+      <li><strong>Talisker Whiskey</strong>      <span class="price">€8.00</span></li>
+      <li><strong>Chivas Whiskey</strong>        <span class="price">€7.00</span></li>
+      <li><strong>Dimple Whiskey</strong>        <span class="price">€7.00</span></li>
+      <li><strong>Jura Whiskey</strong>          <span class="price">€8.00</span></li>
+      <li><strong>Glenfiddich Whiskey</strong>   <span class="price">€8.00</span></li>
+      <li><strong>Cardhu Whiskey</strong>        <span class="price">€8.00</span></li>
+      <li><strong>Johnnie Walker Red</strong>    <span class="price">€6.00</span></li>
+      <li><strong>Johnnie Walker Black</strong>  <span class="price">€7.00</span></li>
+      <li><strong>Bells Whiskey</strong>         <span class="price">€6.00</span></li>
+      <li><strong>J &amp; B Whiskey</strong>     <span class="price">€6.00</span></li>
+      <li><strong>Vat 69 Whiskey</strong>        <span class="price">€6.00</span></li>
+      <li><strong>Cutty Sark Whiskey</strong>    <span class="price">€6.00</span></li>
+      <li><strong>Black &amp; White Whiskey</strong> <span class="price">€6.00</span></li>
+      <li><strong>Teachers Whiskey</strong>      <span class="price">€6.00</span></li>
+      <li><strong>Ballentines Whiskey</strong>   <span class="price">€6.00</span></li>
+      <li><strong>Mackenzie Whiskey</strong>     <span class="price">€6.00</span></li>
+    </ul>
+
+    <h3>Gins</h3>
+    <ul>
+      <li><strong>Gordon's Gin</strong>      <span class="price">€6.00</span></li>
+      <li><strong>Gordon's Pink Gin</strong> <span class="price">€6.00</span></li>
+      <li><strong>Bombay Gin</strong>        <span class="price">€7.00</span></li>
+      <li><strong>Hendrick's Gin</strong>    <span class="price">€7.00</span></li>
+      <li><strong>Bulldog Gin</strong>       <span class="price">€7.00</span></li>
+      <li><strong>Tanqueray Gin</strong>     <span class="price">€7.00</span></li>
+      <li><strong>Beefeaters Gin</strong>    <span class="price">€7.00</span></li>
+    </ul>
+
+    <h3>Vodka</h3>
+    <ul>
+      <li><strong>Absolut Vodka</strong>  <span class="price">€6.00</span></li>
+      <li><strong>Serkova Vodka</strong>  <span class="price">€6.00</span></li>
+      <li><strong>Ursus Vodka</strong>    <span class="price">€6.00</span></li>
+    </ul>
+
+    <h3>Rum</h3>
+    <ul>
+      <li><strong>Bacardi</strong>                  <span class="price">€6.00</span></li>
+      <li><strong>Bacardi Spiced</strong>           <span class="price">€6.00</span></li>
+      <li><strong>Bacardi Dark</strong>             <span class="price">€6.00</span></li>
+      <li><strong>Captain Morgan Spiced</strong>    <span class="price">€6.00</span></li>
+      <li><strong>Captain Morgan Dark</strong>      <span class="price">€6.00</span></li>
+      <li><strong>Captain Morgan Reserve</strong>   <span class="price">€6.00</span></li>
+      <li><strong>Havana Club 3</strong>            <span class="price">€6.00</span></li>
+      <li><strong>Havana Club Dark</strong>         <span class="price">€6.00</span></li>
+      <li><strong>Malibu</strong>                   <span class="price">€6.00</span></li>
+    </ul>
+
+    <h3>Tequila</h3>
+    <ul>
+      <li><strong>Tequila Silver (shot)</strong> <span class="price">€3.00</span></li>
+      <li><strong>Tequila Yellow (shot)</strong> <span class="price">€2.50</span></li>
+    </ul>
+
+    <h3>Liqueurs &amp; Others</h3>
+    <ul>
+      <li><strong>Crown Royal (all)</strong>   <span class="price">€8.00</span></li>
+      <li><strong>Metaxa 3</strong>            <span class="price">€6.00</span></li>
+      <li><strong>Metaxa 5</strong>            <span class="price">€7.00</span></li>
+      <li><strong>Martini</strong>             <span class="price">€6.00</span></li>
+      <li><strong>Japanese Whiskey (any)</strong> <span class="price">€7.00</span></li>
+      <li><strong>Ouzo</strong>               <span class="price">€4.00</span></li>
+      <li><strong>Hennessy</strong>           <span class="price">€7.00</span></li>
+      <li><strong>Four Roses Bourbon</strong> <span class="price">€6.00</span></li>
+      <li><strong>Baileys</strong>            <span class="price">€6.00</span></li>
+      <li><strong>Disaronno</strong>          <span class="price">€6.00</span></li>
+      <li><strong>Tia Maria</strong>          <span class="price">€6.00</span></li>
+      <li><strong>Kahlua</strong>             <span class="price">€6.00</span></li>
+      <li><strong>Southern Comfort</strong>   <span class="price">€6.00</span></li>
+      <li><strong>Drambuie</strong>           <span class="price">€6.00</span></li>
+      <li><strong>Cointreau</strong>          <span class="price">€6.00</span></li>
+      <li><strong>Grand Marnier</strong>      <span class="price">€6.00</span></li>
+      <li><strong>Campari</strong>            <span class="price">€6.00</span></li>
+      <li><strong>Pimm's</strong>             <span class="price">€6.00</span></li>
+      <li><strong>Sours</strong>              <span class="price">€6.00</span></li>
+      <li><strong>Fireball (shot)</strong>    <span class="price">€2.50</span></li>
+    </ul>
+  </section>
+
+  <!-- ══ BREAKFAST ══ -->
+  <section class="menu-section" id="breakfast" role="tabpanel" tabindex="0" aria-labelledby="tab-breakfast">
+    <h2 class="food-category">Breakfast</h2>
+    <p>Served from 8am to 4pm</p>
+
+    <ul>
+      <li><strong>Small Breakfast</strong> <span class="price">€8.00</span>
+          <span>1x Sausage, 2x Bacon, 1x Egg, 1x Toast, 1x Fried Tomato, Baked Beans &amp; Cup of Tea or Coffee</span></li>
+      <li><strong>Medium Breakfast</strong> <span class="price">€9.50</span>
+          <span>2x Bacon, 2x Sausage, 1x Egg, 2x Hash Brown, 1x Toast, 1x Fried Tomato, Baked Beans &amp; Cup of Tea or Coffee</span></li>
+      <li><strong>Full English Breakfast</strong> <span class="price">€12.00</span>
+          <span>3x Bacon, 3x Sausages, 2x Eggs, 2x Toast, 2x Hash Browns, 2x Fried Tomato, Baked Beans &amp; Cup of Tea or Coffee</span></li>
+      <li><strong>Vegetarian Breakfast</strong> <span class="price">€8.00</span>
+          <span>2x Eggs, 2x Toast, 2x Hash Brown, 2x Fried Tomato, Baked Beans &amp; a Cup of Tea or Coffee</span></li>
+      <li><strong>Beans on Toast</strong> <span class="price">€4.50</span></li>
+      <li><strong>2x Toast with Butter &amp; Jam</strong> <span class="price">€4.00</span></li>
     </ul>
 
     <h3>Add Extras</h3>
     <ul class="extras">
-        <li><strong>Sausage</strong><span class="price">€1.20</span></li>
-        <li><strong>Bacon</strong><span class="price">€1.20</span></li>
-        <li><strong>Black Pudding</strong><span class="price">€2.50</span></li>
-        <li><strong>Egg</strong><span class="price">€1.00</span></li>
-        <li><strong>Hash Brown</strong><span class="price">€1.00</span></li>
-        <li><strong>Beans</strong><span class="price">€1.00</span></li>
-        <li><strong>Cheese</strong><span class="price">€1.00</span></li>
-        <li><strong>Fried Tomato</strong><span class="price">€0.80</span></li>
-        <li><strong>Sautéed Mushrooms</strong><span class="price">€0.80</span></li>
-        <li><strong>Sautéed Onions</strong><span class="price">€0.80</span></li>
-        <li><strong>Green Peppers</strong><span class="price">€0.80</span></li>
-        <li><strong>Toast slice</strong><span class="price">€0.80</span></li>
-        <li><strong>Jam</strong><span class="price">€1.00</span></li>
-        <li><strong>Butter</strong><span class="price">€1.00</span></li>
+      <li><strong>Sausage</strong>            <span class="price">€1.20</span></li>
+      <li><strong>Bacon</strong>              <span class="price">€1.20</span></li>
+      <li><strong>Black Pudding</strong>      <span class="price">€2.50</span></li>
+      <li><strong>Egg</strong>                <span class="price">€1.00</span></li>
+      <li><strong>Hash Brown</strong>         <span class="price">€1.00</span></li>
+      <li><strong>Beans</strong>              <span class="price">€1.00</span></li>
+      <li><strong>Cheese</strong>             <span class="price">€1.00</span></li>
+      <li><strong>Fried Tomato</strong>       <span class="price">€0.80</span></li>
+      <li><strong>Sautéed Mushrooms</strong>  <span class="price">€0.80</span></li>
+      <li><strong>Sautéed Onions</strong>     <span class="price">€0.80</span></li>
+      <li><strong>Green Peppers</strong>      <span class="price">€0.80</span></li>
+      <li><strong>Toast slice</strong>        <span class="price">€0.80</span></li>
+      <li><strong>Jam</strong>                <span class="price">€1.00</span></li>
+      <li><strong>Butter</strong>             <span class="price">€1.00</span></li>
     </ul>
 
     <h3>Fresh Buns</h3>
     <ul>
-        <li><strong>BLT (Bacon, Lettuce & Tomato)</strong><span class="price">€5.00</span></li>
-        <li><strong>Bacon</strong><span class="price">€4.50</span></li>
-        <li><strong>Bacon & Egg</strong><span class="price">€5.50</span></li>
-        <li><strong>Sausage</strong><span class="price">€4.50</span></li>
-        <li><strong>Sausage & Bacon</strong><span class="price">€5.70</span></li>
-        <li><strong>Sausage & Egg</strong><span class="price">€5.50</span></li>
-        <li><strong>Bacon, Sausage, Egg & Tomato</strong><span class="price">€7.00</span></li>
+      <li><strong>BLT (Bacon, Lettuce &amp; Tomato)</strong> <span class="price">€5.00</span></li>
+      <li><strong>Bacon</strong>                            <span class="price">€4.50</span></li>
+      <li><strong>Bacon &amp; Egg</strong>                  <span class="price">€5.50</span></li>
+      <li><strong>Sausage</strong>                          <span class="price">€4.50</span></li>
+      <li><strong>Sausage &amp; Bacon</strong>              <span class="price">€5.70</span></li>
+      <li><strong>Sausage &amp; Egg</strong>                <span class="price">€5.50</span></li>
+      <li><strong>Bacon, Sausage, Egg &amp; Tomato</strong> <span class="price">€7.00</span></li>
     </ul>
+    <p>Available on Sliced White Bread, Sliced Brown Bread or Bagel — Fresh or Toasted</p>
 
-    <p><em>Available on Sliced White Bread, Sliced Brown Bread or Bagel — Fresh or Toasted</em></p>
-
-    <h3>Sandwiches & Light Options</h3>
+    <h3>Sandwiches &amp; Light Options</h3>
     <ul>
-        <li><strong>Smoked Salmon with Cream Cheese & Lettuce</strong><span class="price">€7.00</span></li>
-        <li><strong>Ham & Tomato</strong><span class="price">€4.50</span></li>
-        <li><strong>Cheese & Tomato</strong><span class="price">€4.50</span></li>
-        <li><strong>Turkey & Tomato</strong><span class="price">€4.50</span></li>
+      <li><strong>Smoked Salmon with Cream Cheese &amp; Lettuce</strong> <span class="price">€7.00</span></li>
+      <li><strong>Ham &amp; Tomato</strong>                              <span class="price">€4.50</span></li>
+      <li><strong>Cheese &amp; Tomato</strong>                          <span class="price">€4.50</span></li>
+      <li><strong>Turkey &amp; Tomato</strong>                          <span class="price">€4.50</span></li>
     </ul>
 
     <h3>Hot Plates</h3>
     <ul>
-        <li><strong>Beef Burger 100g (with Caramelised Onions)</strong><span class="price">€6.00</span></li>
-        <li><strong>Omelette</strong><span class="price">€7.00</span> <em>(Add extras – see above)</em></li>
+      <li><strong>Beef Burger 100g (with Caramelised Onions)</strong> <span class="price">€6.00</span></li>
+      <li><strong>Omelette</strong> <span class="price">€7.00</span>
+          <span>Add extras – see above</span></li>
     </ul>
 
     <h3>Desserts</h3>
     <ul>
-        <li><strong>Cake (per slice)</strong><span class="price">€5.50</span></li>
+      <li><strong>Cake (per slice)</strong> <span class="price">€5.50</span></li>
     </ul>
-        </section>
+  </section>
 
-        <div class="overlay flex-column" id="overlay">
-            <div class="overlay-content flex-column">
-                <h2>Trial Expired. Please Contact Website administrator!</h2>
-                <button id="view-menu-overlay-btn">View Menu</button>
-            </div>
-        </div>
-
+  <!-- Overlay -->
+  <div class="overlay flex-column" id="overlay" style="display:none;">
+    <div class="overlay-content">
+      <h2>Trial Expired.<br>Please Contact Website Administrator.</h2>
+      <button id="view-menu-overlay-btn">View Menu</button>
     </div>
-</body>
+  </div>
 
+</div><!-- /.menu-container -->
+</body>
+</html>
